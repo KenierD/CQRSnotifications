@@ -165,6 +165,16 @@ const NotificationView = () => {
                     />
                     <TextField
                         margin="dense"
+                        name="password"
+                        label="Password"
+                        type="password"
+                        fullWidth
+                        variant="outlined"
+                        value={formData.password}
+                        onChange={handleChange}
+                    />
+                    <TextField
+                        margin="dense"
                         name="email"
                         label="Email"
                         type="email"
@@ -233,6 +243,7 @@ const NotificationView = () => {
                         value={formData.link}
                         onChange={handleChange}
                     />
+
                 </DialogContent>
                 <DialogActions>
                     <Button onClick={handleClose} color="primary">
